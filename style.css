@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto','Helvetica','Arial',sans-serif!important;
+}
+
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+
+.demo-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+      url('wallet.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.porcentagem {
+    font-size: 10px;
+    font-weight: bold;
+    background: #eee;
+}
+
+
+.centraliza-horizontal {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.no-space {
+    padding: 0;
+    margin: 0;
+}
+
+.back-gray {
+    background: #eee;
+    height: 100%;
+}
+
+.centraliza-vertical {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vertical-align {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.cor-titulo {
+    color: rgba(0,0,0,.54);
+}
+
+.valor {
+    font-size: 30px;
+    color: #333;
+}
+
+.valor-sifrao {
+    color: #333;
+    font-size: 35px;
+}
+
+.back-image {
+    background-image: url('./back.jpg');
+}
+
+.white {
+    color: whitesmoke;
+}
+
+.categoria {
+    font-size: 10px;
+    font-weight: bold;
+    color: #8d8d8d;
+}
+
+.paragrafo-linha {
+    margin: 0;
+}
+
+.valor-linha {
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: 20px;
+}
