@@ -26,7 +26,8 @@ var interfaceControler = (function () {
         valorError: '.valor__error',
         editCarteira: '.btn__edit__carteira',
         cardCarteira: '.demo-card-square',
-        valorBalanco: '.valor__balanco'
+        valorBalanco: '.valor__balanco',
+        modalCancelar: '.close'
     }
 
     return {
@@ -103,6 +104,7 @@ var globalControler = (function (carteiraCtl, interfaceCtrl) {
 
         document.querySelector(DOM.btnAdd).addEventListener('click', mostraModalCarteira);
         document.querySelector(DOM.salvarCarteira).addEventListener('click', salvarCarteira);
+        document.querySelector(DOM.modalCancelar).addEventListener('click', interfaceCtrl.fechaDialog);
     }
 
     //recebe variavel tipo para informar se é uma nova carteira 'n' ou uma edição 'e'
