@@ -26,8 +26,7 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input class="mdl-textfield__input valor__carteira" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
                 <label class="mdl-textfield__label" for="sample4">Valor</label>
-                <span class="mdl-textfield__error">Insira somente números!</span>
-                <span class="mdl-textfield__error valor__error">Campo obrigatório!!</span>
+                <span class="mdl-textfield__error valor__error">Insira somente números!</span>
             </div>
         </div>
         <div class="mdl-dialog__actions">
@@ -63,7 +62,15 @@
                 <div class="mdl-cel mdl-cell--3-col">
                     <div class="centraliza-vertical" style="position:relative;">
                         <span class="valor-sifrao white">R$</span>
-                        <span class="valor white valor__balanco"> 0,00</span>
+                        <span class="valor white valor__balanco">+ 2,500.00</span>
+                        <div class="div_entradas">
+                            Entrada:
+                            <span class="valor__entrada white">+ 1,500.00</span>
+                        </div>
+                        <div class="div_saidas">
+                            Saída:
+                            <span class="valor__saida white">- 1,000.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,42 +78,42 @@
             <div class="mdl-grid" style="background: #eee;">
                 <div class="mdl-cell mdl-cell--2-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <select class="mdl-textfield__input" id="tipo">
+                        <select class="mdl-textfield__input select_tipo" id="tipo">
                             <option value=""></option>
                             <option value="e">Entrada</option>
                             <option value="s">Saída</option>
                         </select>
                         <label class="mdl-textfield__label" for="tipo">Tipo</label>
+                        <span class="mdl-textfield__error tipo_validator">Campo obrigatório!!</span>
                     </div>
                 </div>
 
                 <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="descricao">
+                        <input class="mdl-textfield__input input_desc" type="text" id="descricao">
                         <label class="mdl-textfield__label" for="descricao">Descrição</label>
+                        <span class="mdl-textfield__error desc_validator">Campo obrigatório!!</span>
+                    </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--2-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input valor__form" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="valor_novo">
+                        <label class="mdl-textfield__label" for="valor_novo">Valor</label>
+                        <span class="mdl-textfield__error valor_validator">Insira somente números!</span>
                     </div>
                 </div>
 
                 <div class="mdl-cell mdl-cell--2-col">
                     <!-- Raised button with ripple -->
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary centraliza-vertical">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary centraliza-vertical btn_nova_entrada">
                         Adicionar
                     </button>
                 </div>
             </div>
 
-            <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--1-col">
-                    <i class="material-icons vertical-align">add</i>
-                </div>
-                <div class="mdl-cell mdl-cell--9-col">
-                    <p class="paragrafo-linha">Decrição adicionada do evento</p>
-                    <span class="categoria">Categoria do Evento</span>
-                </div>
-                <div class="mdl-cell mdl-cell--2-col">
-                    <p class="valor-linha">R$ 1.00,00</p>
-                </div>
-                </span>
+            <div class="mdl-grid container__dados">
+                
             </div>
         </div>
     </div>
