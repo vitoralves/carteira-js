@@ -13,6 +13,10 @@ body {
       url('wallet.png') bottom right 15% no-repeat #46B6AC;
 }
 
+.conteudo {
+    height: -webkit-fill-available;
+}
+
 .porcentagem {
     font-size: 10px;
     font-weight: bold;
@@ -123,3 +127,28 @@ body {
 .vermelho {
     color: #FF5049;
 }
+
+.verde {
+    color: #28B9B5;
+}
+
+.elements:hover {
+    background-color: #eeeeee69;
+}
+
+.btn-remove {
+    background: #FF5049;
+    height: 56px;
+    display: none;
+}
+
+.btn-remove:hover {
+    background: red;
+}
+
+.elements:hover .btn-remove {
+    display: block;
+}
+
+.btn-remove:focus { outline: none; }
+.btn-remove:active { transform: translateY(2px); }
